@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marketcloud/marketcloud-node.git"
+    "url": "git+https://github.com/joseabraham/eprezto-yappy-sdk.git"
   },
   "keywords": [
     "ecommerce",
@@ -20,9 +20,9 @@
   "author": "Jose Abraham Garcia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Marketcloud/marketcloud-node/issues"
+    "url": "https://github.com/joseabraham/eprezto-yappy-sdkissues"
   },
-  "homepage": "https://github.com/Marketcloud/marketcloud-node#readme",
+  "homepage": "https://github.com/joseabraham/eprezto-yappy-sdk#readme",
   "dependencies": {
     "atob": "^2.1.2",
     "axios": "^0.21.1",
