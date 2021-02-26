@@ -1,3 +1,5 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/joseabraham/eprezto-yappy-sdk/badge.svg)](https://snyk.io/test/github/snyk/goof)
+
 # EPREZTO - YAPPY SDK
 
 This is the repository for Yappy's payment button nodejs client library as ported by Eprezto's team. 
