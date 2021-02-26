@@ -44,18 +44,21 @@ sandbox :     SANDBOX MODE [yes, no]
 You can interact with the api through Yappy.Client instance
 ```javascript
 var Yappy = require('eprezto-yappy');
+
 var yappy = new Yappy.Client({
-      secretToken : process.env.YAPPY_SECRET_TOKEN,
-			merchantId : process.env.YAPPY_MERCHANT_ID,
-			successUrl : process.env.YAPPY_SUCCESS_URL,
-			failUrl : process.env.YAPPY_FAIL_URL,
-			domainUrl : process.env.YAPPY_DOMAIN_URL,
-			checkoutUrl : process.env.YAPPY_CHECKOUT_URL,
-			sandbox : process.env.YAPPY_SANDBOX,
+  secretToken : process.env.YAPPY_SECRET_TOKEN,
+  merchantId : process.env.YAPPY_MERCHANT_ID,
+  successUrl : process.env.YAPPY_SUCCESS_URL,
+  failUrl : process.env.YAPPY_FAIL_URL,
+  domainUrl : process.env.YAPPY_DOMAIN_URL,
+  checkoutUrl : process.env.YAPPY_CHECKOUT_URL,
+  sandbox : process.env.YAPPY_SANDBOX,
 })
 ```
-Input data:
+Generate the payment link:
+
 ```javascript
+
 var paymentData = {
   orderId : 12345,
   total : 10,
@@ -63,15 +66,14 @@ var paymentData = {
   taxes : 1
 }
 
-		
-//Save the product
+//Generate the payment link
 yappy.generate_payment_link(paymentData)
 .then(function(response){
     let redirectUrl = response.redirectUrl
     return redirectUrl
 })
 
-// Returns
+// Returns URL with signed parameters
 {
  redirectUrl: "YAPPY_REDIRECT_URL",
  status: true 
