@@ -20,7 +20,8 @@ Please remember to check the changelog for important information whenever updati
 * Use environment variables for your credentials.
 * merchantID and secretToken are provided by BG only for business accounts.
 * This SDK is for backend use (NodeJS)
-* Include in the URLS the orderId such as https://yourdomain.com/checkout-success?orderId=12345 so that your frontend knows which order is being confirmed.
+* Include in the URLS the orderId such as https://yourdomain.com/checkout-success/12345 so that your frontend knows which order is being confirmed.
+* Don't pass query-strings or search params as  RFC 3986 is not directly supported in JS yet and it is not correctly converted when sending to Yappy.
 * There are no webhooks yet, it'd be a nice to have whenever the Yappy team adds them, this could avoid several issues related to missed redirects. 
 
 ## How does Yappy work

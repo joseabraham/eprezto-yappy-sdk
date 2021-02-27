@@ -21,9 +21,9 @@ Fixtures.getNewClientInstance = function () {
 
 Fixtures.orderData = {
   orderId: 12345,
-  total: 10,
-  subTotal: 9,
-  taxes: 1,
+  total: 10.55,
+  subTotal: 9.01,
+  taxes: 1.54,
 };
 
 module.exports = Fixtures;
